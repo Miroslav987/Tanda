@@ -1,0 +1,22 @@
+
+.similar_products_h3 {
+    margin: 20px 100px;
+}
+.similar_products {
+    margin: 0px 100px;
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+@media screen and (max-width: 500px) {
+    .similar_products_h3 {
+       text-align: start;
+    }
+    .similar_products {
+        justify-content: center;
+    }
+
+}

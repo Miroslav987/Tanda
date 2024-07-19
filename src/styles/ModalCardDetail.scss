@@ -1,0 +1,90 @@
+.modal_card_details {
+    position:fixed;
+    left: 0;
+    width: 100%;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.11);
+    z-index: 20;
+
+    .modal_card_details_block {
+    transition: 0.3s;
+        position: absolute;
+        right: 0;
+        width: 500px !important;
+        height: 100%;
+        background: rgb(255, 255, 255);
+        
+        .modal_card_details_nav {
+            padding: 20px 30px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            border-bottom: 1px solid rgba(176, 176, 176, 1);
+            
+            button {
+                cursor: pointer;
+                border: none;
+                background: none;
+                font-weight: 500;
+                font-size: 18px;
+            }
+        }
+    }
+    .modal_card_details_info {
+        padding: 20px 30px;
+        display: flex;
+        justify-content: space-between;
+        tr {
+            display: flex;
+            flex-direction: column;
+            align-items: start;
+
+            th,td {
+                line-height: 40px;
+            }
+        }
+        // ul,ol {
+        //     list-style-type: none;
+        //     li {
+        //         line-height: 40px;
+        //     }
+        // }
+        // ul {
+        //     color: rgba(117, 117, 117, 1);
+        // }
+    }
+    .modal_card_details_price {
+        position: absolute;
+        height: 80px;
+        bottom: 0   ;
+        left: 0;
+        right: 0;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 20px;
+        border-top: 1px solid rgba(176, 176, 176, 1);
+        h3 {
+            color: rgba(30, 144, 255, 1);
+        }
+        button {
+            border: none;
+            border-radius: 10px;
+            background: rgba(30, 144, 255, 1);
+            color: white;
+            padding: 10px 40px;
+        }
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .modal_card_details {
+        .modal_card_details_block {
+            width: 350px !important;
+            font-size: 15px;
+        }
+    }
+
+}
