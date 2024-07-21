@@ -18,10 +18,8 @@ export const SliderReviews:React.FC<CommentsProps> =({comments})=> {
             {
               breakpoint: 1068,
               settings: {
-                slidesToShow: 1.8,
-                slidesToScroll: 1,
-                vertical: false,
-                verticalSwiping: false,
+                slidesToShow: 2,
+                slidesToScroll: 2,
               },
             },
             {
